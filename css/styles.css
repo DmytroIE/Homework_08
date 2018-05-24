@@ -1,0 +1,151 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/*-----COMMON-----*/
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+.content-wrapper{
+  margin: 0 auto;
+  width: 87%; /*up to 768 px*/
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*-----HEADER-----*/
+.header {
+  margin: 0 auto;
+  background-color: #1a1915;
+  background-image: url(../img/banner_01.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  min-height: 400px; /*up to 768 px*/
+}
+
+.header-first-line{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*-----SECTION PARTNERS-----*/
+
+.partners-list {
+  width: 100%;  /*up to 768 px*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners-list-item {
+  text-align: center;
+  flex-basis: 100%;
+  outline: 1px solid red;
+}
+
+.photo-container {
+  display: inline-block;
+  
+  position: relative;
+}
+
+.photo-container img{
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+}
+
+
+
+.status{
+
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 32px;
+  height: 32px;
+  border-radius: 19px;
+  border: 3px solid #fff;
+
+}
+
+.lock{
+    background-image: url(../img/TV.svg);  
+    background-color: #ff4e50;
+}
+
+.bottle{
+  background-image: url(../img/bottle.svg);  
+  background-color: #f3b93b;
+}
+
+.coffee{
+  background-image: url(../img/coffee.svg);  
+  background-color: #f3b93b;
+}
+
+.paperplane{
+  background-image: url(../img/paper-plane.svg);  
+  background-color: #f3b93b;
+}
+
+
+@media screen and (min-width: 768px){
+  .content-wrapper{
+    width: 67%;
+  }
+    .partners-list-item{
+      flex-basis: 50%;
+    }
+    .header{ 
+      min-height: 700px;
+    }
+  
+}
+@media screen  and (min-width: 1440px){
+  .content-wrapper{
+    width: 65%;
+  }
+    .partners-list-item{
+      flex-basis: 25%;
+    }
+  
+}
+
+
+
+
+
+
+
+
